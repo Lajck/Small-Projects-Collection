@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Border-radius Previewer</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="container">
+			<div id="more">
+				<input type="checkbox" id="more_values" name="more_values">
+				<label for="more_values">8 values type</label>
+			</div>
+			<div id="box"></div>
+			<div id="handlers">
+				<input type="number" id="handler_a" class="handler" pattern="[0-9]+">
+				<input type="text" id="handler_type_a" value="%" class="handler_type">
+				<input type="number" id="handler_b" class="handler">
+				<input type="text" id="handler_type_b" value="%" class="handler_type">
+				<input type="number" id="handler_c" class="handler">
+				<input type="text" id="handler_type_c" value="%" class="handler_type">
+				<input type="number" id="handler_d" class="handler">
+				<input type="text" id="handler_type_d" value="%" class="handler_type">
+				<input type="number" id="handler_e" class="handler optional">
+				<input type="text" id="handler_type_e" value="%" class="handler_type optional">
+				<input type="number" id="handler_f" class="handler optional">
+				<input type="text" id="handler_type_f" value="%" class="handler_type optional">
+				<input type="number" id="handler_g" class="handler optional">
+				<input type="text" id="handler_type_g" value="%" class="handler_type optional">
+				<input type="number" id="handler_h" class="handler optional">
+				<input type="text" id="handler_type_h" value="%" class="handler_type optional">
+			</div>
+			<div id="code">
+				<code id="css_code">border-radius: 0px;</code>
+				<div id="clipboard">
+					<p>copy</p>
+				</div>
+			</div>
+			<p id="credits">Made by <a href="https://www.github.com/Lajck" target="_blank">Lajack</a></p>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

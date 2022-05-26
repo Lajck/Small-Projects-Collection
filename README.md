@@ -9,4 +9,5 @@ The intent of these small projects are:
 | Challenge | JavaScript | ShellScript | Lua |
 | - | :-: | :-: | :-: |
 | [Bin2Dec](./bin2dec) | x | x | x |
+| [Border Radius Previewer](./bin2dec) | x |  |  |
 

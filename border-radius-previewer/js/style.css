@@ -1,0 +1,151 @@
+*, *:focus {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #111111;
+	color: #FFFFFF;
+	height: 100%;
+	font-family: sans-serif;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 90%;
+	height: 100%;
+}
+
+#box {
+	border: 1px solid white;
+	width: 150px;
+	height: 150px;
+	transition: 1s all;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+	appearance: textfield;
+	-moz-appearance: textfield;
+	text-align: center;
+	border: 0;
+	background-color: transparent;
+	color: #FFFFFF;
+}
+
+#handlers {
+	margin: 20px 0;
+	text-align: center;
+}
+
+.handler {
+	width:30px;
+	height: 30px;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.handler_type {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	position: relative;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#more {
+	margin-bottom: 15px;
+}
+
+#more label, #more input {
+	display: inline;
+}
+
+#code {
+	position: relative;
+}
+
+#clipboard {
+	position: absolute;
+	left: -5px;
+	top: -4px;
+	display: inline-block;	
+	background-color: #666666;
+	border-radius: 5px;
+	font-size: .8rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#clipboard::after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	right: 7px;
+	top: 10px;
+	width: 8px;
+	height: 10px;
+	border: 1px solid #999999;
+	border-radius: 3px;
+}
+
+#clipboard::before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	right: 5px;
+	top: 13px;
+	width: 8px;
+	height: 10px;
+	border: 1px solid #666666;
+	border-radius: 3px;
+}
+
+#clipboard p {
+	position: absolute;
+	top: 9px;
+	color: #aaaaaa;
+	left: -60px;
+	text-transform: uppercase;
+	border-radius: 5px;
+	display: none;
+}
+
+#code:hover #clipboard p {
+	display: block!important;
+}
+
+#css_code {
+	padding: 0px 0px;
+	text-align: center;
+	border-radius: 50px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+#css_code:hover {
+	color: #CCCCCC;
+}
+
+#credits {
+	margin-top: 100px;
+	font-size: .8rem;
+}
+
+a {
+	color: #666666;
+}
